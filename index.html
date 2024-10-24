@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select Your Vehicle</title> 
+</head>
+<body>
+    <div class="header">
+        Hands-on Project 6-4
+    </div>
+    
+    <div class="container">
+        <h2>Select Your Vehicle</h2>
+        
+        <div class="selection-grid">
+            <div class="select-group">
+                <label for="make">Make</label>
+                <select id="make">
+                    <option value="">Select Make</option>
+                    <option value="buick">Buick</option>
+                    <option value="honda">Honda</option>
+                    <option value="nissan">Nissan</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label for="model">Model</label>
+                <select id="model">
+                    <!-- Honda Models -->
+                     <option value="">Select Model</option>
+                    <option class="honda" value="accord">Accord</option>
+                    <option class="honda" value="civic">Civic</option>
+                    <option class="honda" value="odyssey">Odyssey</option>
+                    <option class="honda" value="pilot">Pilot</option>
+                    <!-- Buick Models -->
+                    <option class="buick" value="enclave">Enclave</option>
+                    <option class="buick" value="encore">Encore</option>
+                    <!-- Nissan Models -->
+                    <option class="nissan" value="altima">Altima</option>
+                    <option class="nissan" value="sentra">Sentra</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label for="trim">Trim</label>
+                <select id="trim">
+                    <option value="">Select Trim</option>
+                    <!-- Accord Trims -->
+                    <option class="accord" value="EX 2dr Coupe (2.4L 4cyl 6M)">EX 2dr Coupe (2.4L 4cyl 6M)</option>
+                    <option class="accord" value="EX-L 4dr Sedan (2.4L 4cyl CVT)">EX-L 4dr Sedan (2.4L 4cyl CVT)</option>
+                    <option class="accord" value="EX-L 4dr Sedan (2.4L 4cyl CVT)">LX 4dr Sedan (2.4L 4cyl 6M)</option>
+                    <option class="accord" value="Sport 4dr Sedan (2.4L 4cyl 6M)">Sport 4dr Sedan (2.4L 4cyl 6M)</option>
+                    <!-- Civic Trims -->
+                    <option class="civic" value="LX 4dr Sedan (2.0L 4cyl CVT)">LX 4dr Sedan (2.0L 4cyl CVT)</option>
+                    <option class="civic" value="EX 4dr Sedan (2.0L 4cyl CVT)">EX 4dr Sedan (2.0L 4cyl CVT)</option>
+                    <!-- odyssey Trims -->
+                    <option class="odyssey" value="EX-L 4dr Minivan (3.5L 6cyl 5A)">EX-L 4dr Minivan (3.5L 6cyl 5A)</option>
+                    <!-- !-- -- pilot Trims -->
+                    <option class="pilot" value="EX-L 4dr SUV (3.5L 6cyl 6A)">EX-L 4dr SUV (3.5L 6cyl 6A)</option>
+                    <!-- -- enclave Trims -->
+                    <option class="enclave" value="L 4dr SUV (3.6L 6cyl 6A)">L 4dr SUV (3.6L 6cyl 6A)</option>
+                    <!-- -- encore Trims -->
+                    <option class="encore" value="L 4dr SUV (1.5L 4cyl Turbo 6A)">L 4dr SUV (1.5L 4cyl Turbo 6A)</option>
+                    <!-- -- altima Trims -->
+                    <option class="altima" value="SR 4dr Sedan (2.0L 4cyl CVT)">SR 4dr Sedan (2.5L 4cyl CVT)</option>
+                    <!-- -- sentra Trims -->
+                    <option class="sentra" value="SR 4dr Sedan (2.0L 4cyl CVT)">SR 4dr Sedan (2.0L 4cyl CVT)</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label>&nbsp;</label>
+                <button type="button" id="selectBtn">Select</button>
+            </div>
+        </div>
+        
+        <div class="selected-vehicle" id="selectedVehicle">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
